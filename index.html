@@ -23,14 +23,21 @@
   </head>
   <body>
     <header>
-      <div class="navigation">
-        <img src="./images/logo-bookmark.svg" alt="BOOKMARK" />
-        <nav>
+      <div class="navigation" id="navigation">
+        <div class="nav-icons">
+          <img src="./images/logo-bookmark.svg" id="bookmark" alt="BOOKMARK" />
+          <img src="./images/icon-hamburger.svg" id="burger" />
+        </div>
+        <nav id="menu">
           <a href="#" class="nav-item">Features</a>
           <a href="#" class="nav-item">Pricing</a>
-          <a href="#" class="nav-item">Contact</a>
+          <a href="#" id="last" class="nav-item">Contact</a>
           <a href="#" class="nav-item login">Login</a>
         </nav>
+        <div class="icons">
+          <img src="./images/icon-facebook.svg" />
+          <img src="./images/icon-twitter.svg" />
+        </div>
       </div>
       <div class="cover">
         <div class="text">
@@ -81,7 +88,6 @@
       <div class="feature speedy">
         <div class="img">
           <img src="./images/illustration-features-tab-2.svg" />
-          <div class="blue"></div>
         </div>
         <div class="text">
           <h2>Intelligent search</h2>
@@ -95,7 +101,6 @@
       <div class="feature easy">
         <div class="img">
           <img src="./images/illustration-features-tab-3.svg" />
-          <div class="blue"></div>
         </div>
         <div class="text">
           <h2>Share your bookmarks</h2>
@@ -204,28 +209,38 @@
       <div class="mail">
         <h4>35.000+ ALREADY JOINED</h4>
         <h2>Stay up-to-date with what we're doing</h2>
-        <div>
-          <input type="email" placeholder="Enter your email address" >
-          <button class="login">Contact us</button>
+        <div class="user-input">
+          <div id="input-w-error">
+            <div class="input-field">
+              <input type="email" id="user-email" placeholder="Enter your email address"/>
+              <img src="./images/icon-error.svg" id="error-icon" />
+            </div>
+            <div id="error-message">Whoops, make sure it's an email</div>
+          </div>
+          <button id="contact-button" >Contact us</button>
         </div>
       </div>
       <div class="navigation">
-        <img src="./images/logo-bookmark.svg" alt="BOOKMARK" />
+        <img
+          src="./images/logo-bookmark copy.svg"
+          class="bookmark"
+          alt="BOOKMARK"
+        />
         <nav>
           <a href="#" class="nav-item">Features</a>
           <a href="#" class="nav-item">Pricing</a>
           <a href="#" class="nav-item">Contact</a>
         </nav>
         <div class="icons">
-          <img src="./images/icon-facebook.svg"/>
-          <img src='./images/icon-twitter.svg' />
+          <img src="./images/icon-facebook.svg" />
+          <img src="./images/icon-twitter.svg" />
         </div>
       </div>
       <p class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >. Coded by <a href="#">Katarina Zrnkarevic</a>.
       </p>
     </footer>
   </body>
