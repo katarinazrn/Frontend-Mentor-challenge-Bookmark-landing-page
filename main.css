@@ -1,0 +1,384 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+
+:root {
+  --soft-blue: hsl(231, 69%, 60%);
+  --soft-red: hsl(0, 94%, 66%);
+  --grayish-blue: hsl(229, 8%, 60%);
+  --very-dark-blue: hsl(229, 31%, 21%);
+}
+
+html,
+body {
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+  color: var(--very-dark-blue);
+}
+
+header {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.navigation {
+  display: flex;
+  padding: 20px;
+}
+
+nav {
+  margin-left: auto;
+}
+
+nav a {
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 400;
+  padding: 10px 25px;
+  letter-spacing: 1px;
+  color: var(--very-dark-blue);
+}
+
+nav a:hover {
+  color: var(--soft-red);
+}
+
+.login {
+  border: 2px solid var(--soft-red);
+  background-color: var(--soft-red);
+  color: white;
+  border-radius: 5px;
+}
+
+.login:hover {
+  background-color: transparent;
+}
+
+.buttons {
+  display: flex;
+}
+
+.cover {
+  display: flex;
+  padding: 20px;
+}
+
+.cover .text {
+  width: 45%;
+}
+
+p {
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--grayish-blue);
+}
+
+button {
+  padding: 10px 14px;
+  border: 2px solid transparent;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  box-shadow: 0px 3px 4px -1px rgb(153, 153, 153);
+}
+
+button:hover{
+    border: 2px solid var(--very-dark-blue);
+    background-color: transparent;
+}
+.blue-button:hover{
+    border: 2px solid var(--soft-blue);
+    color: var(--soft-blue);
+}
+
+.get-it-chrome,
+.blue-button {
+  background-color: var(--soft-blue);
+  color: white;
+  margin-right: 5px;
+}
+
+.get-it-firefox {
+  background-color: rgb(241, 241, 245);
+  color: var(--very-dark-blue);
+}
+
+.cover img {
+  width: 90%;
+}
+
+.cover .img {
+  display: flex;
+  width: auto;
+  height: auto;
+  position: relative;
+}
+
+header {
+  position: relative;
+}
+
+header .blue {
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  position: absolute;
+  height: 70%;
+  width: 50%;
+  background-color: var(--soft-blue);
+  border-radius: 0 0 0 40%;
+}
+
+.features {
+  width: 90%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.features .text-center {
+  width: 50%;
+  margin: 10px auto;
+}
+
+.menu {
+  width: auto;
+  display: flex;
+  margin: 0 auto;
+}
+
+.menu-item {
+  color: var(--very-dark-blue);
+  cursor: pointer;
+  padding: 15px 20px;
+  border-bottom: 2px solid lightgray;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.menu-item:hover {
+  color: var(--soft-red);
+}
+
+.active {
+  color: var(--very-dark-blue);
+  border-bottom: 3px solid var(--soft-red);
+}
+
+.feature {
+  display: none;
+  padding: 20px;
+  margin: 10px auto;
+}
+
+.show {
+  display: flex;
+}
+
+.feature .text {
+  width: 50%;
+  padding: 30px;
+}
+
+.feature .img {
+  max-width: 50%;
+  height: auto;
+  display: flex;
+  position: relative;
+}
+
+.feature .img img {
+  width: 80%;
+  margin-left: auto;
+  padding-right: 20px;
+}
+
+.features {
+  position: relative;
+}
+
+.features .blue {
+  bottom: 0px;
+  left: 0;
+  z-index: -1;
+  position: absolute;
+  height: 45%;
+  width: 40%;
+  background-color: var(--soft-blue);
+  border-radius: 0 0 40% 0;
+}
+
+.download {
+  width: 90%;
+  margin: 50px auto;
+}
+
+.download .text-center {
+  padding: 10px;
+  width: 53%;
+  margin: 0 auto;
+}
+
+.browsers {
+  height: 100%;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.browser {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  width: 30%;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 20px 10px;
+  height: 300px;
+  text-align: center;
+  box-shadow: 0px 3px 7px 1px rgb(234, 234, 236);
+}
+
+.browser .logo {
+  width: 40%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.dots {
+  padding-bottom: 5px;
+  width: auto;
+}
+
+.firefox {
+  margin-top: 50px;
+}
+
+.opera {
+  margin-top: 100px;
+}
+
+.frequently-asked {
+  width: 90%;
+  margin: 10px auto;
+}
+
+.frequently-asked .text-center {
+  padding: 10px;
+  width: 53%;
+  margin: 0 auto;
+}
+
+.questions {
+  padding: 10px;
+  width: 53%;
+  margin: 20px auto;
+}
+
+.q {
+  cursor: pointer;
+  padding: 0 10px;
+  border-top: 2px solid rgb(235, 235, 235);
+  display: flex;
+  justify-content: space-between;
+}
+
+.q img {
+  cursor: pointer;
+  margin: auto 0;
+  width: 18px;
+  height: 12px;
+}
+
+.q p {
+  color: var(--very-dark-blue);
+}
+
+.a {
+  line-height: 26px;
+  display: none;
+  padding: 0 10px;
+}
+
+#q-3 {
+  border-bottom: 2px solid rgb(235, 235, 235);
+}
+
+.q:hover p {
+  color: var(--soft-red);
+}
+
+.show-answer .a {
+  display: flex !important;
+}
+
+.frequently-asked button {
+  display: flex;
+  margin: 20px auto;
+}
+
+footer{
+    text-align: center;
+    margin: 20px 0 0 0;
+    background-color: var(--soft-blue);
+}
+
+footer .mail{
+    color:  white;
+    display: flex;
+    width: 45%;
+    margin:  0 auto;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mail h4{
+    letter-spacing: 2px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+}
+
+.mail input{
+    text-align: start!important;
+    border: 2px solid white;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-size: 12px;
+
+}
+
+footer .navigation{
+    
+    padding-right:  20px;
+    padding-left:  20px;
+    margin: 10px 0;
+    margin-top: auto;
+    background-color: var(--very-dark-blue);
+}
+
+footer .navigation a{
+    color: white;
+}
+
+footer nav{
+    margin-left: 0;
+}
+
+footer .icons{
+    display: flex;
+    margin-left: auto;
+}
+
+
+footer .icons img{
+    padding: 0 10px;
+}
